@@ -20,4 +20,6 @@ def kalkulator():
                     kurs = float(i['ask'])
                     wynik = kwota * kurs
                     break
+                else:
+                    wynik = 'Wprowadziles niepoprawna walute'
     return render_template('kalkulator.html', wynik = wynik)
